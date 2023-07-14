@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColor"
+    tools:context=".EditProfile">
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/frame" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Change Picture"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_nama_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_tanggal_lahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin">
+
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/laki_laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Laki-Laki" />
+
+                <RadioButton
+                    android:id="@+id/perempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--btn save-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_save_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan" />
+        </LinearLayout>
+        <!--/btn edit-->
+    </LinearLayout>
+
+
+
+</RelativeLayout>

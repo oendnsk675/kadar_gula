@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#6E83B7</color>
+    <color name="secondaryColor">#F0EEEE</color>
+    <color name="backgroundColor">#DEE8F9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="normal">#71EA6F</color>
+    <color name="pra">#F4E667</color>
+    <color name="diabetes">#F56C6C</color>
+</resources>
